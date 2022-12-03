@@ -38,6 +38,9 @@ img {
 /* Header */
 
 .header {
+    position: fixed;
+    top: 0;
+    left: 0; right: 0;
     height: 65px;
     background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
     backdrop-filter: blur(10px);
@@ -87,4 +90,105 @@ img {
     color: var(--color-yellow);
     cursor: pointer;
     border-radius: 10px;
+}
+
+/* Main */
+
+.main {
+    background: url(../imgs/main.jpg) no-repeat center center;
+    width: 100vw;
+    height: 95vh;
+    background-size: cover;
+}
+
+.main .main_container {
+    padding: 65px 30px 0px;
+}
+
+.main .main_container .left .title {
+    position: relative;
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 7rem;
+    margin-top: 90px;
+    letter-spacing: 3px;
+    width:fit-content;
+}
+
+.main .main_container .left .title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60%;
+    background-color: var(--color-yellow);
+    height: .3rem;
+    border-radius: 20px;
+}
+
+.main .main_container .left .description {
+    color: #cecece;
+    width: 40%;
+    margin-top: 25px;
+    font-size: 1.7rem;
+    line-height: 1.4;
+    letter-spacing: 1px;
+}
+
+.main .main_container .left .rating {
+    margin-top: 30px;
+    color: var(--color-yellow);
+    font-size: 2rem;
+}
+
+.main .main_container .left .play_movie {
+    background-color: transparent;
+    margin-top: 30px;
+  
+}
+
+.main .main_container .left .play_movie a {
+    position: relative;
+    font-size: 2rem;
+    color: var(--color-yellow);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    border: .1rem solid var(--color-yellow);
+    border-radius: 20px;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.main .main_container .left .play_movie a::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--color-yellow);
+    transition: all 200ms ease-in;
+    z-index: -1;
+}
+
+.main .main_container .left .play_movie a:hover::after {
+    width: 100%;
+}
+
+.main .main_container .left .play_movie a span {
+    margin-right: 15px;
+    color: #fff;
+    transition: 200ms linear;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.main .main_container .left .play_movie a:hover span {
+    color: var(--color-black);
+}
+
+.main .main_container .left .play_movie a:hover i {
+    color: var(--color-black);
 }
