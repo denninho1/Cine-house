@@ -131,10 +131,9 @@ img {
     background: linear-gradient(to bottom, transparent 30%, rgba(0,0,0,1)), url(../imgs/main.jpg) ;
     width: 100vw;
     height: 95vh;
-    background-size: cover;
+    background-size: 115%;
 /*     background-attachment: fixed; */
-    background-position: center center;
-    background-repeat: no-repeat;
+    background-position: center left;
 }
 
 .main .main_container {
