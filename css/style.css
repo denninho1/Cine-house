@@ -171,10 +171,14 @@ img {
 
 .main .main_container .left .info_movie .description {
     color: var(--color-gray);
-    width: 40%;
+    width: 45%;
     margin-top: 25px;
     font-size: 1.7rem;
     line-height: 1.4;
+    transition: 300ms ease-out;
+}
+
+.main .main_container .left .info_movie .description:hover {
     letter-spacing: .1rem;
 }
 
