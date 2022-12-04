@@ -16,6 +16,7 @@
 :root {
     --color-black: #191919;
     --color-yellow: #F6C90E;
+    --color-gray: #cecece;
 }
 
 html {
@@ -33,6 +34,10 @@ img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.bg_y {
+    background-color: var(--color-yellow);
 }
 
 /* Header */
@@ -141,33 +146,76 @@ img {
     border-radius: 20px;
 }
 
-.main .main_container .left .description {
-    color: #cecece;
+.main .main_container .left .info_movie .description {
+    color: var(--color-gray);
     width: 40%;
     margin-top: 25px;
     font-size: 1.7rem;
     line-height: 1.4;
-    letter-spacing: 1px;
+    letter-spacing: .1rem;
 }
 
-.main .main_container .left .rating {
-    margin-top: 30px;
-    color: var(--color-yellow);
-    font-size: 1.8rem;
+.main .main_container .left .info_movie .info_movie_mid {
     display: flex;
     align-items: center;
+    gap: 15px;
+    margin-top: 30px;
+    color: #fff;
 }
 
-.main .main_container .left .rating span {
-    margin-left: 1rem;
-    color: #fff;
+.main .main_container .left .info_movie .info_movie_mid .rating {
+    color: var(--color-yellow);
     font-size: 1.7rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.main .main_container .left .info_movie .info_movie_mid .rating span {
+    color: #fff;
+}
+
+.main .main_container .left .info_movie .info_movie_mid .division {
+    width: .7rem;
+    height: .7rem;
+    background-color: var(--color-yellow);
+    border-radius: 50%;
+}
+
+.main .main_container .left .info_movie .info_movie_mid .classification span{
+    color: var(--color-yellow);
+}
+
+.main .main_container .left .info_movie .info_movie_bottom {
+    display: flex;
+    align-items: center;
+    font: 1.7rem;
+    color: var(--color-gray);
+    margin-top: 20px;
+    letter-spacing: .1rem;
+}
+
+.main .main_container .left .info_movie .info_movie_bottom span {
+    border-left: .1rem solid rgba(167, 167, 167, 0.719);
+    padding: 0 1rem;
+}
+
+.main .main_container .left .info_movie .info_movie_bottom span:first-child {
+    border: none;
+    padding-left: 0;
+}
+
+.main .main_container .left .info_movie_mid .duration{
+    font-size: 1.8rem;
+}
+.main .main_container .left .info_movie_mid .duration span{
+    color: var(--color-yellow);
 }
 
 .main .main_container .left .play_movie {
     background-color: transparent;
     margin-top: 30px;
-  
+    
 }
 
 .main .main_container .left .play_movie a {
