@@ -101,7 +101,17 @@ img {
 }
 
 .header .header_container .logo {
-    width: 5rem;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-weight: 800;
+    font-size: 1.7rem;
+    letter-spacing: -1px;
+}
+
+.header .header_container .logo .icon_logo {
+    color: var(--color-yellow);
+    font-size: 2rem;
 }
 
 .header .header_container .user_button {
